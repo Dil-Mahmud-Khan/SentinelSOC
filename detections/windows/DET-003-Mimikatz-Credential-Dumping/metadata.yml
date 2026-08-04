@@ -1,0 +1,49 @@
+id: DET-003
+
+title: Mimikatz Credential Dumping Detection
+
+status: Engineering Complete
+
+platform: Windows
+
+severity: Critical
+
+author: Dil Mahmud Khan
+
+created: 2026-08-04
+
+version: 1.0
+
+mitre:
+  tactic: Credential Access
+  technique: T1003
+  technique_name: OS Credential Dumping
+
+log_sources:
+  - Sysmon Event ID 1
+  - Sysmon Event ID 10
+
+data_sources:
+  - Process Creation
+  - Process Access
+  - Command Line
+  - Windows Security Logs
+
+detections:
+  - Wazuh
+  - Sigma
+
+validation:
+  lab_tested: false
+  screenshots: false
+  sample_logs: false
+
+tags:
+  - windows
+  - mimikatz
+  - credential-dumping
+  - detection-engineering
+  - soc
+  - wazuh
+  - sigma
+  - mitre

@@ -1,0 +1,73 @@
+title: Mimikatz Credential Dumping Detection
+
+id: 34fefcb8-18d6-4c9e-b3b0-000000000003
+
+status: experimental
+
+description: Detects execution of Mimikatz or commonly renamed variants associated with credential dumping.
+
+author: Dil Mahmud Khan
+
+date: 2026-08-04
+
+references:
+  - https://attack.mitre.org/techniques/T1003/
+
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+  selection:
+    Image|endswith:
+      - '\mimikatz.exe'
+      - '\mimi.exe'
+
+  condition: selection
+
+falsepositives:
+  - Security research
+  - Red team exercises
+  - Authorized penetration testing
+
+level: critical
+
+tags:
+  - attack.credential_access
+  - attack.t1003title: Mimikatz Credential Dumping Detection
+
+id: 34fefcb8-18d6-4c9e-b3b0-000000000003
+
+status: experimental
+
+description: Detects execution of Mimikatz or commonly renamed variants associated with credential dumping.
+
+author: Dil Mahmud Khan
+
+date: 2026-08-04
+
+references:
+  - https://attack.mitre.org/techniques/T1003/
+
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+  selection:
+    Image|endswith:
+      - '\mimikatz.exe'
+      - '\mimi.exe'
+
+  condition: selection
+
+falsepositives:
+  - Security research
+  - Red team exercises
+  - Authorized penetration testing
+
+level: critical
+
+tags:
+  - attack.credential_access
+  - attack.t1003

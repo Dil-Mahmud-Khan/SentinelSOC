@@ -1,0 +1,48 @@
+title: Reverse Shell Detection
+
+id: 4c9e5b54-1111-4d9b-9d55-000000000004
+
+status: experimental
+
+description: Detects suspicious processes commonly associated with reverse shell activity.
+
+author: Dil Mahmud Khan
+
+date: 2026-08-04
+
+references:
+  - https://attack.mitre.org/techniques/T1071/
+  - https://attack.mitre.org/techniques/T1059/
+
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+
+  selection:
+
+    Image|endswith:
+      - '\cmd.exe'
+      - '\powershell.exe'
+      - '\pwsh.exe'
+      - '\python.exe'
+      - '\nc.exe'
+      - '\ncat.exe'
+
+  condition: selection
+
+falsepositives:
+  - Administrative scripts
+  - Security testing
+  - Authorized penetration testing
+
+level: high
+
+tags:
+  - attack.command_and_control
+  - attack.execution
+  - attack.t1071
+  - attack.t1059
+
+

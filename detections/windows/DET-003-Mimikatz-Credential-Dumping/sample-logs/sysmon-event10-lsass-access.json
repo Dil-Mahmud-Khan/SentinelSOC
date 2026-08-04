@@ -1,0 +1,10 @@
+{
+  "EventID": 10,
+  "UtcTime": "2026-08-04 14:22:10.000",
+  "SourceImage": "C:\\Tools\\mimikatz.exe",
+  "TargetImage": "C:\\Windows\\System32\\lsass.exe",
+  "GrantedAccess": "0x1fffff",
+  "SourceUser": "LAB\\Administrator",
+  "Computer": "WIN11-LAB"
+}
+

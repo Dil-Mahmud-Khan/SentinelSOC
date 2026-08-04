@@ -1,0 +1,27 @@
+<group name="windows,mimikatz,credential_access,custom,">
+
+  <rule id="100300" level="12">
+
+    <if_group>sysmon_event1</if_group>
+
+    <field name="win.eventdata.Image" type="pcre2">(?i)(mimikatz\.exe|mimi\.exe)</field>
+
+    <description>Mimikatz credential dumping activity detected.</description>
+
+    <mitre>
+      <id>T1003</id>
+    </mitre>
+
+    <options>no_full_log</options>
+
+    <group>
+      attack,
+      credential_access,
+      windows,
+      mimikatz,
+      custom_detection,
+    </group>
+
+  </rule>
+
+</group>

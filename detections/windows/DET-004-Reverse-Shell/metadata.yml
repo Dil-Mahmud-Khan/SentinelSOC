@@ -1,0 +1,50 @@
+id: DET-004
+
+title: Reverse Shell Detection
+
+status: Engineering Complete
+
+platform: Windows
+
+severity: Critical
+
+author: Dil Mahmud Khan
+
+created: 2026-08-04
+
+version: 1.0
+
+mitre:
+  tactic: Command and Control
+  technique: T1071
+  secondary_technique: T1059
+
+log_sources:
+  - Sysmon Event ID 1
+  - Sysmon Event ID 3
+
+data_sources:
+  - Process Creation
+  - Network Connection
+  - Command Line
+  - Windows Security Logs
+
+detections:
+  - Wazuh
+  - Sigma
+
+validation:
+  lab_tested: false
+  screenshots: false
+  sample_logs: false
+
+tags:
+  - windows
+  - reverse-shell
+  - command-and-control
+  - detection-engineering
+  - soc
+  - wazuh
+  - sigma
+  - mitre
+

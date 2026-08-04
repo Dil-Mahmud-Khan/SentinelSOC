@@ -1,0 +1,28 @@
+<group name="windows,reverse_shell,custom,">
+
+  <rule id="100400" level="12">
+
+    <if_group>sysmon_event3</if_group>
+
+    <field name="win.eventdata.Image" type="pcre2">(?i)(cmd\.exe|powershell\.exe|pwsh\.exe|python\.exe|nc\.exe|ncat\.exe)</field>
+
+    <description>Potential reverse shell activity detected.</description>
+
+    <mitre>
+      <id>T1071</id>
+    </mitre>
+
+    <options>no_full_log</options>
+
+    <group>
+      attack,
+      command_and_control,
+      windows,
+      reverse_shell,
+      custom_detection,
+    </group>
+
+  </rule>
+
+</group>
+

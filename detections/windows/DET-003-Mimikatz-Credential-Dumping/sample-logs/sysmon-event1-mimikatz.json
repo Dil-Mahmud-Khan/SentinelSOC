@@ -1,0 +1,11 @@
+{
+  "EventID": 1,
+  "UtcTime": "2026-08-04 14:20:31.000",
+  "Image": "C:\\Tools\\mimikatz.exe",
+  "CommandLine": "mimikatz.exe privilege::debug sekurlsa::logonpasswords exit",
+  "CurrentDirectory": "C:\\Tools\\",
+  "User": "LAB\\Administrator",
+  "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+  "ParentCommandLine": "cmd.exe"
+}
+
