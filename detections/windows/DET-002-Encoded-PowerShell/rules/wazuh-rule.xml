@@ -1,0 +1,28 @@
+<group name="windows,powershell,custom,">
+
+  <rule id="100200" level="10">
+    <if_group>sysmon_event1</if_group>
+
+    <field name="win.eventdata.Image" type="pcre2">(?i)powershell\.exe$</field>
+
+    <field name="win.eventdata.CommandLine" type="pcre2">(?i)(-enc|-encodedcommand)</field>
+
+    <description>Encoded PowerShell command execution detected.</description>
+
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+
+    <options>no_full_log</options>
+
+    <group>
+      attack,
+      execution,
+      powershell,
+      windows,
+      custom_detection,
+    </group>
+
+  </rule>
+
+</group>

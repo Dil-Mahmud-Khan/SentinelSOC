@@ -1,0 +1,11 @@
+{
+  "EventID": 1,
+  "UtcTime": "2026-08-04 10:15:32.000",
+  "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "CommandLine": "powershell.exe -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA",
+  "CurrentDirectory": "C:\\Users\\Administrator\\",
+  "User": "LAB\\Administrator",
+  "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+  "ParentCommandLine": "cmd.exe"
+}
+

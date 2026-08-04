@@ -1,0 +1,41 @@
+title: Encoded PowerShell Command Execution
+
+id: 9e6d8c6e-5a74-4d0d-a4b2-000000000002
+
+status: experimental
+
+description: Detects PowerShell launched with Base64 encoded commands using the -EncodedCommand or -enc parameter.
+
+author: Dil Mahmud Khan
+
+date: 2026-08-04
+
+references:
+  - https://attack.mitre.org/techniques/T1059/001/
+
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+  selection:
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+    CommandLine|contains:
+      - '-EncodedCommand'
+      - '-enc'
+
+  condition: selection
+
+falsepositives:
+  - Administrative automation
+  - Enterprise management scripts
+  - Software deployment tools
+
+level: high
+
+tags:
+  - attack.execution
+  - attack.t1059.001
+
