@@ -1,0 +1,46 @@
+title: Suspicious Scheduled Task Creation
+
+id: bbd7d8b8-f74d-49b0-9d89-000000000005
+
+status: experimental
+
+description: >
+  Detects potential persistence through Windows Scheduled Task creation
+  using schtasks.exe.
+
+author: Dil Mahmud Khan
+
+date: 2026-08-04
+
+references:
+  - https://attack.mitre.org/techniques/T1053/005/
+
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+
+  selection:
+
+    Image|endswith:
+      - '\schtasks.exe'
+
+    CommandLine|contains:
+      - '/create'
+      - '/sc'
+      - '/tn'
+
+  condition: selection
+
+falsepositives:
+  - Legitimate system administration
+  - Enterprise software deployment
+  - Automated maintenance tasks
+
+level: high
+
+tags:
+  - attack.persistence
+  - attack.t1053.005
+

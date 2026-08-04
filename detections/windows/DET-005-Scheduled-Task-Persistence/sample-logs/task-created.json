@@ -1,0 +1,10 @@
+{
+  "EventID": 1,
+  "UtcTime": "2026-08-04 18:30:45.000",
+  "Image": "C:\\Windows\\System32\\schtasks.exe",
+  "CommandLine": "schtasks /create /tn WindowsUpdateCheck /tr powershell.exe /sc onlogon",
+  "User": "LAB\\Administrator",
+  "Computer": "WIN11-LAB",
+  "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+}
+

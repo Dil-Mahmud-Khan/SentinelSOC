@@ -2,14 +2,15 @@
 
 ## MITRE ATT&CK
 
-- T1071 – Application Layer Protocol
-- T1059 – Command and Scripting Interpreter
+- T1053.005 – Scheduled Task
+- https://attack.mitre.org/techniques/T1053/005/
 
 ---
 
 ## Microsoft
 
-- Sysmon Documentation
+- Windows Task Scheduler Documentation
+- Microsoft Sysmon Documentation
 - Windows Security Auditing Documentation
 
 ---
@@ -30,7 +31,7 @@
 
 ## Threat Research
 
-- Red Canary Threat Detection Reports
-- CISA Known Adversary Techniques
+- Red Canary Threat Detection Report
+- CISA Cybersecurity Advisories
 - The DFIR Report
 

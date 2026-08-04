@@ -1,0 +1,11 @@
+{
+  "EventID": 3,
+  "UtcTime": "2026-08-04 16:45:22.000",
+  "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "DestinationIp": "192.168.56.101",
+  "DestinationPort": 4444,
+  "Protocol": "tcp",
+  "User": "LAB\\Administrator",
+  "Computer": "WIN11-LAB"
+}
+

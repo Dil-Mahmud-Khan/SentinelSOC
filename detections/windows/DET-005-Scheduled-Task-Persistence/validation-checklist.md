@@ -2,27 +2,27 @@
 
 ## Environment
 
-- [ ] Windows VM deployed
-- [ ] Kali VM deployed
+- [ ] Windows 11 VM deployed
+- [ ] Kali Linux VM deployed
 - [ ] Sysmon installed
 - [ ] Wazuh Agent installed
-- [ ] Wazuh Manager running
+- [ ] Wazuh Manager operational
 
 ---
 
 ## Attack Execution
 
-- [ ] Reverse shell executed
-- [ ] Sysmon Event ID 1 generated
-- [ ] Sysmon Event ID 3 generated
+- [ ] Scheduled Task created
+- [ ] PowerShell task created
+- [ ] Task executed successfully
 
 ---
 
 ## Detection Validation
 
-- [ ] Rule ID 100400 triggered
+- [ ] Rule ID 100500 triggered
 - [ ] Alert visible in Wazuh Dashboard
-- [ ] MITRE mapping verified
+- [ ] Correct MITRE mapping displayed
 - [ ] Alert severity verified
 
 ---
@@ -30,18 +30,18 @@
 ## Investigation
 
 - [ ] Parent process reviewed
-- [ ] Network connection verified
-- [ ] Destination IP investigated
+- [ ] Command line reviewed
+- [ ] Task configuration verified
 - [ ] Timeline documented
 
 ---
 
 ## Evidence
 
-- [ ] Dashboard screenshot
-- [ ] Alert screenshot
-- [ ] Sysmon Event screenshot
-- [ ] Exported logs
+- [ ] Wazuh dashboard screenshot
+- [ ] Alert details screenshot
+- [ ] Event Viewer screenshot
+- [ ] Sysmon log exported
 - [ ] IOC list documented
 
 ---

@@ -1,0 +1,55 @@
+id: DET-005
+
+title: Scheduled Task Persistence Detection
+
+status: Engineering Complete
+
+platform: Windows
+
+severity: High
+
+author: Dil Mahmud Khan
+
+created: 2026-08-04
+
+version: 1.0
+
+mitre:
+  tactic: Persistence
+  technique: T1053.005
+  technique_name: Scheduled Task
+
+log_sources:
+  - Sysmon Event ID 1
+  - Microsoft-Windows-TaskScheduler/Operational
+
+data_sources:
+  - Process Creation
+  - Task Scheduler Events
+  - Command Line
+  - Windows Event Logs
+
+detections:
+  - Wazuh
+  - Sigma
+
+validation:
+  lab_tested: false
+  screenshots: false
+  sample_logs: false
+
+future_validation:
+  windows_vm: pending
+  wazuh_dashboard: pending
+  sysmon_validation: pending
+
+tags:
+  - windows
+  - persistence
+  - scheduled-task
+  - t1053.005
+  - detection-engineering
+  - soc
+  - wazuh
+  - sigma
+
