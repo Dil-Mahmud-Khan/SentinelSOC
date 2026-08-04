@@ -1,0 +1,22 @@
+id: DET-002
+title: Encoded PowerShell Detection
+status: Development
+platform: Windows
+severity: High
+
+mitre:
+  tactic: Execution
+  technique: T1059.001
+  name: PowerShell
+
+log_source:
+  - Sysmon Event ID 1
+  - Windows Security Logs
+
+detection_type: Command Line Monitoring
+
+author: Dil Mahmud Khan
+
+version: 1.0
+
+created: 2026-08-04
