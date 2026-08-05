@@ -1,0 +1,37 @@
+flowchart TD
+
+Windows
+
+Linux
+
+Sysmon
+
+WazuhAgent["Wazuh Agent"]
+
+Manager["Wazuh Manager"]
+
+Rules["Custom Rules"]
+
+Sigma
+
+Dashboard["Wazuh Dashboard"]
+
+SOC["SOC Analyst"]
+
+Windows --> Sysmon
+
+Sysmon --> WazuhAgent
+
+Linux --> WazuhAgent
+
+WazuhAgent --> Manager
+
+Manager --> Rules
+
+Rules --> Dashboard
+
+Sigma --> Rules
+
+Dashboard --> SOC
+o
+

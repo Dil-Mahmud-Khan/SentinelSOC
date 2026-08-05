@@ -1,0 +1,21 @@
+flowchart LR
+
+Internet
+
+Kali["Kali Linux"]
+Windows["Windows 11"]
+Ubuntu["Ubuntu Server"]
+
+Manager["Wazuh Manager"]
+
+Dashboard["Wazuh Dashboard"]
+
+Internet --> Kali
+Internet --> Windows
+
+Kali --> Manager
+Windows --> Manager
+Ubuntu --> Manager
+
+Manager --> Dashboard
+

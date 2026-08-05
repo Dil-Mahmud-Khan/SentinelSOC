@@ -1,0 +1,36 @@
+flowchart LR
+
+Attack
+
+Telemetry
+
+Sysmon
+
+WazuhAgent["Wazuh Agent"]
+
+Manager["Wazuh Manager"]
+
+Rules["Detection Rules"]
+
+Alert
+
+Investigation
+
+Response
+
+Attack --> Telemetry
+
+Telemetry --> Sysmon
+
+Sysmon --> WazuhAgent
+
+WazuhAgent --> Manager
+
+Manager --> Rules
+
+Rules --> Alert
+
+Alert --> Investigation
+
+Investigation --> Response
+
