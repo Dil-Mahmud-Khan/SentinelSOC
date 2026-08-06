@@ -1,0 +1,9 @@
+id: DET-001
+title: SSH Brute Force Detection
+platform: Linux
+severity: Medium
+status: Validated
+mitre:
+  - T1110
+author: Dil Mahmud Khan
+version: "1.0"
