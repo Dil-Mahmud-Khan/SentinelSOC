@@ -1,0 +1,11 @@
+{
+  "indicator": "8.8.8.8",
+  "indicator_type": "ipv4",
+  "is_private": false,
+  "is_global": true,
+  "is_loopback": false,
+  "is_reserved": false,
+  "is_multicast": false,
+  "classification": "public_global_ip",
+  "enriched_at": "2026-08-07T06:58:14.649919+00:00"
+}
