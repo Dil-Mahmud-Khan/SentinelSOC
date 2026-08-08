@@ -1,0 +1,18 @@
+{
+  "incident_id": "IR-001",
+  "incident_type": "SSH Brute Force / Authentication Attack",
+  "severity": "Medium",
+  "status": "Investigating",
+  "source": "Wazuh",
+  "affected_host": "kali",
+  "source_ip": "::1",
+  "target_service": "SSH",
+  "target_user": "fakeuser",
+  "wazuh_rule_id": "5710",
+  "mitre_techniques": [
+    "T1110.001",
+    "T1021.004"
+  ],
+  "detection_time": "2026-08-06T09:59:11",
+  "evidence_source": "Wazuh SSH authentication telemetry"
+}
