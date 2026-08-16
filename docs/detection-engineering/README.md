@@ -44,11 +44,11 @@ At the current stage, all completed detections have reached the **Engineering** 
 
 | Detection ID | Technique | Platform | Status |
 |--------------|-----------|----------|--------|
-| DET-001 | SSH Brute Force | Linux | Engineering Complete |
-| DET-002 | Encoded PowerShell | Windows | Engineering Complete |
-| DET-003 | Mimikatz Credential Dumping | Windows | Engineering Complete |
-| DET-004 | Reverse Shell | Windows | Engineering Complete |
-| DET-005 | Scheduled Task Persistence | Windows | Engineering Complete |
+| DET-001 | SSH Brute Force | Linux | Needs Repair |
+| DET-002 | Encoded PowerShell | Windows | Pending Validation |
+| DET-003 | Mimikatz Credential Dumping | Windows | Pending Validation |
+| DET-004 | Reverse Shell | Windows | Pending Validation |
+| DET-005 | Scheduled Task Persistence | Windows | Pending Validation |
 
 ---
 

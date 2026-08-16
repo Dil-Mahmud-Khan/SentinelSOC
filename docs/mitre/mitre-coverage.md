@@ -2,10 +2,10 @@
 
 | Detection ID | Detection | Tactic | Technique | Status |
 |--------------|-----------|--------|-----------|--------|
-| DET-001 | SSH Brute Force | Credential Access | T1110 | Engineering Complete |
-| DET-002 | Encoded PowerShell | Execution | T1059.001 | Engineering Complete |
-| DET-003 | Mimikatz Credential Dumping | Credential Access | T1003 | Engineering Complete |
-| DET-004 | Reverse Shell Detection | Command and Control | T1071 | Engineering Complete |
+| DET-001 | SSH Brute Force | Credential Access | T1110 | Needs Repair |
+| DET-002 | Encoded PowerShell | Execution | T1059.001 | Pending Validation |
+| DET-003 | Mimikatz Credential Dumping | Credential Access | T1003 | Pending Validation |
+| DET-004 | Reverse Shell Detection | Command and Control | T1071 | Pending Validation |
 
 ---
 
